@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Facebook App running on Firefox Browser">
+
+    <parameter name="useCloud" value="true"/>
+    <parameter name="userName" value="amirullah"/>
+    <parameter name="accessKey" value="8e843701-e234-420e-ad78-b1064ab3c5ae"/>
+    <parameter name="os" value="Windows 10"/>
+    <parameter name="url" value="http://www.facebook.com"/>
+    <parameter name="browserName" value="firefox"/>
+    <parameter name="browserVersion" value="45.0"/>
+
+
+
+    <test name="Home Page">
+        <classes>
+            <class name="homePage.LogIn"/>
+        </classes>
+    </test>
+</suite>
